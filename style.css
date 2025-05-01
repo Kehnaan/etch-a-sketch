@@ -1,0 +1,36 @@
+/* Basic reset to ensure consistency across browsers */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  /* Ensures padding and border don't affect width/height */
+}
+
+
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+
+/* Style the container to hold the grid items */
+/* Grid container using Flexbox */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 512px; /* 16 cells * 32px per cell */
+    height: 512px; /* 16 cells * 32px per cell */
+    background-color: #fff;
+    border: 1px solid #ccc;
+  }
+  
+  /* Individual grid cells */
+  .grid-square {
+    flex: 0 0 6.25%; /* 100% / 16 = 6.25% for each cell */
+    height: 6.25%; /* Equal height for square cells */
+    border: 1px solid #ddd;
+    background-color: #fff;
+  }
